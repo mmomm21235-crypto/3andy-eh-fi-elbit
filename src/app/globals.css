@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #ea580c;
+  --color-primary-dark: #c2410c;
+  --color-primary-light: #fdba74;
+  --color-secondary: #16a34a;
+  --color-secondary-dark: #15803d;
+  --color-secondary-light: #86efac;
+  --color-warm: #fef3c7;
+  --color-warm-dark: #fde68a;
+  --color-cream: #fffbeb;
+  --color-accent: #dc2626;
+}
+
+body {
+  direction: rtl;
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
